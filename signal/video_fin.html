@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="utf-8">
+  <head>
+<title>Helix</title>    
+    <link rel="stylesheet" href="css/main.css">	
+<link rel="stylesheet" href="css/vers2_fadein.css">
+<link rel="stylesheet" href="css/defile.css">
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.simplemarquee9.js"></script>
+<script src="js/defile.js"></script>
+</head>
+<body>
+<audio id="texte" autoplay>
+    <source src="data/reponse1.mp3" type="audio/mpeg">
+</audio>
+<audio id="texte" autoplay>
+    <source src="data/reponse2.mp3" type="audio/mpeg">
+</audio>
+<audio id="texte" autoplay>
+    <source src="data/reponse3.mp3" type="audio/mpeg">
+</audio>
+<audio id="texte" autoplay>
+    <source src="data/reponse4.mp3" type="audio/mpeg">
+</audio>
+<audio id="texte" autoplay>
+    <source src="data/reponse5.mp3" type="audio/mpeg">
+</audio>
+<audio id="texte" autoplay>
+    <source src="data/reponse6.mp3" type="audio/mpeg">
+</audio>
+
+<div class="fade-in">
+<video id="video" autoplay>      
+      <source src="https://helixcity.xyz/data/video6.mp4" type="video/mp4" >
+    </video>     
+<audio autoplay loop>
+    <source src="data/audio/Serat - Opening.mp3" type="audio/mpeg">
+</audio>
+<script>
+ function clickButton1() {  
+document.querySelector('#btn1').click(); 
+        } 
+        setInterval(clickButton1, 15000); 	
+function myFunction1() {
+  location.replace("video_sommet.html")
+} 	 
+</script>
+</body>
+</html>

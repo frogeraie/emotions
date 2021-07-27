@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="utf-8">
+  <head>
+<title>Helix</title>    
+    <link rel="stylesheet" href="css/main.css">	
+<link rel="stylesheet" href="css/vers2_fadein.css">
+</head>
+<body>
+<audio id="texte" autoplay>
+    <source src="data/reponse1.mp3" type="audio/mpeg">
+</audio>
+<button id="btn1"  onclick="myFunction1()">Ubiquité d'internet: Cliquez! 
+    </button> 
+<div class="fade-in">
+<video id="video" autoplay>      
+      <source src="data/spirale_sommetb.mp4" type="video/mp4" >
+    </video>     
+<audio autoplay loop>
+    <source src="data/audio/Serat - Opening.mp3" type="audio/mpeg">
+</audio>
+<script>
+ function clickButton1() {  
+document.querySelector('#btn1').click(); 
+        } 
+        setInterval(clickButton1, 5000); 	
+function myFunction1() {
+  location.replace("resp2.html")
+} 	 
+</script>
+</body>
+</html>

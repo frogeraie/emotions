@@ -1,0 +1,134 @@
+video { width: 100%; height: 100%; position: absolute; display: block; top: 0; left: 0; object-fit: cover; z-index: -1}
+
+body { 
+  font-family: "verdana", sans-serif;
+  
+  background: #222;
+z-index: 1;
+text-align: justify;
+}
+
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+	top: 200px;
+  
+  width: 80%;
+  
+  font-size: 1.8em;
+
+	animation-duration: 150s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+color: #DF99C0;
+}
+
+.item-2{
+	animation-name: anim-2;
+color:#DF99C0;
+}
+
+.item-3{
+	animation-name: anim-3;
+color: #DF99C0;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 10%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 10%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 10%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+#btn1 {
+  	
+	visibility: hidden;
+opacity: 0; z-index: -2
+}
+
+#my_div {
+position: absolute;
+	left:50px;
+        top:90px;
+color: #A27CC1;
+	z-index: +1
+    -moz-animation: cssAnimation 0s ease-in 20s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 20s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 20s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 20s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+#audio {
+position: absolute;
+	left:10px;
+        top:50px;
+color: #A27CC1;
+	z-index: +1
+    -moz-animation: cssAnimation 0s ease-in 20s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 20s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 20s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 20s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+.hide {
+ display: none;
+}
+#footer
+{
+position: absolute;
+ left:    200;
+ right:   50;
+}

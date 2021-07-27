@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <head>
+        <title>Hélice</title>   
+<link rel="stylesheet" href="css/debut.css">
+<script src="lib/p5.js" type="text/javascript"></script>
+    <script src="lib/p5.dom.js" type="text/javascript"></script>   
+<script src="js/jquery-3.3.1.min.js"></script>
+   </head>
+    <body>
+
+<div id="actions">
+      <button id="btn1"  onclick="myFunction1()">Ubiquité d'internet: Cliquez! 
+    </button> 
+    </div>
+<script>
+ function clickButton1() {  
+document.querySelector('#btn1').click(); 
+        } 
+        setInterval(clickButton1, 15000); 	
+function myFunction1() {
+  location.replace("intro.html")
+} 	 
+</script>
+    <script src="swarm.js" type="text/javascript"></script>    	
+    </body>
+</html>

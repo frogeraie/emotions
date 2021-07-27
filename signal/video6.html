@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <head>
+        <title>Hélice</title>   
+<link rel="stylesheet" href="css/fin.css">
+<link rel="stylesheet" href="css/vers2_fadein.css">
+<script src="lib/p5.js" type="text/javascript"></script>
+    <script src="lib/p5.dom.js" type="text/javascript"></script>   
+<script src="js/jquery-3.3.1.min.js"></script>
+   </head>
+    <body>
+    <div class="fade-in">
+<img src="data/reine_chienR.JPG" alt="Trulli">
+</div>
+
+<div id="actions">
+      <button id="btn1"  onclick="myFunction1()">Ubiquité d'internet: Cliquez! 
+    </button> 
+    </div>
+<script>
+ function clickButton1() {  
+document.querySelector('#btn1').click(); 
+        } 
+        setInterval(clickButton1, 15000); 	
+function myFunction1() {
+  location.replace("resp1.html")
+} 	 
+</script>
+    <script src="reponses.js" type="text/javascript"></script>    	
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/debut_translate.css" rel="stylesheet" type="text/css"/>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/arduino.js"></script>
+  <script src="js/musique.js"></script>
+ </head>
+    <body>
+
+<div class= 'container'>
+<div class="container_content">
+<div class="container_content_inner">
+<div class="title">
+  <h1>Pour accéder à l'Hélice de la Ville</h1>
+  
+</div>
+<div class="par">
+<p>
+Veuillez entrer votre nom ou un pseudo
+<form method="post" action="/register">
+            <input type="text" name="username">
+            <input type="submit" value="Entrez">
+        </form>
+</p>
+</div>
+ <ul id="messages"></ul>
+<div id="actions">
+      <button id="turnOnLed" type="button">Turn On LED</button>
+      <button id="turnOffLed" type="button">Turn Off LED</button>
+    </div>
+
+    
+</div>
+</div>
+ <div class="container_outer_img">
+ <div class="img-inner">
+ <img src="data/ext2.JPG" alt="Trulli" >
+       </div>
+     </div>
+    
+  </div>
+<div class="overlay"></div>
+
+  <script>  
+ function clickButton() {  
+document.querySelector('#turnOnLed').click(); 
+        } 
+        setInterval(clickButton, 100);  
+        
+        </script>
+        </body>
+</html>

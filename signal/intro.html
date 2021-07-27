@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <head>
+        <title>Hélice</title>    
+<link rel="stylesheet" href="css/intro.css">	
+<link rel="stylesheet" href="css/vers2_fadein.css">
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    </head>
+    <body>
+
+<div class="fade-in">
+<img src="data/porte2carre.png" alt="Trulli">
+</div>
+<div id="actions">
+      <button id="btn1"  onclick="myFunction1()">Ubiquité d'internet: Cliquez! 
+    </button> 
+
+      <button id="turnOnLed" onclick="myFunction2()" type="button">Turn On LED</button>
+    </div>
+<script>
+ function clickButton1() {  
+document.querySelector('#btn1').click(); 
+        } 
+        setInterval(clickButton1, 30000); 	
+function myFunction1() {
+  location.replace("nom.html")
+} 
+ function clickButton2() {  
+document.querySelector('#turnOnLed').click(); 
+        } 
+        setInterval(clickButton2, 100); 	
+ 
+</script>
+        <p class="item-1">
+          L'Hélice de la Ville est composée de six boites où se concentrent les émotions humaines fondamentales. Exacerbées par la réalité urbaine, la solitude, la tristesse, l'ennui, l'angoisse, la peur et la colère sont ressenties par chacun de façon différentes et s'expriment donc sous les formes les plus variables. Parfois une grimace, parfois un pantin, parfois un mot ... Quelles sont les vôtres?
+        </p>
+    </body>
+</html>

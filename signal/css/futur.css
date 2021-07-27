@@ -1,0 +1,84 @@
+body {
+	background-color: #cccccc;
+	}
+button {
+opacity: 0; z-index: -1}   
+.form {
+position: absolute;
+left: 2500px;
+  top: 1800px;
+  
+  animation-name: form;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+.par {
+position: absolute;
+left: -100px;
+  top: -100px;
+  width: 100px;
+  height: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  animation-name: paragraphe;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+.image {
+	position: absolute;
+  left: 0px;
+  top: 100px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../data/villeP.JPG"); 
+  background-size: 1200px 800px;
+  
+  animation-name: image;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+  }
+h1 {
+	position: absolute;
+	left: 0px;
+  	top: 0px;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	animation-name: titre;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  }
+
+@keyframes form {
+  from {left: 2500px;
+  top: 1800px;}
+  to {left: 500px;
+  top: 150px;;}
+}
+@keyframes titre {
+  from {left: 0px;
+  	top: 0px;
+  	font-size: 15px;}
+  to {left: 100px;
+  	top: 0px;
+  	font-size: 50px;}
+}
+@keyframes paragraphe {
+  from { left: -100px;
+  top: -100px;
+  width: 100px;
+  height: 100px;
+  font-size: 15px;}
+  to {left: 50px;
+  top: 100px;
+  width: 150px;
+  height: 1000px;
+  font-size: 30px;}
+}
+@keyframes image {
+  from { width: 100px;
+  height: 100px;}
+  to {width: 1200px;
+  height: 800px;}
+}

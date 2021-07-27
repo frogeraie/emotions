@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="utf-8">
+<head>
+	<title>Hélice</title>    
+<link rel="stylesheet" href="css/main.css">	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+   </head>
+<body>
+<button id="btn1"  onclick="myFunction1()">Ubiquité d'internet: Cliquez! 
+    </button> 
+<audio id="texte" autoplay loop>
+    <source src="data/futur.mp3" type="audio/mpeg">
+</audio>    
+<audio autoplay loop>
+    <source src="https://helixcity.xyz/data/audio/red_robin - The Surveyor.mp3" type="audio/mpeg">
+</audio>
+<script src="hi.js"></script>
+<script>
+ function clickButton1() {  
+document.querySelector('#btn1').click(); 
+        } 
+        setInterval(clickButton1, 20000); 	
+function myFunction1() {
+  location.replace("index.html")
+} 
+</script>
+    </body>
+</html>
